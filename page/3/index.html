@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/3/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-chat_20241228_103704" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/12/28/chat_20241228_103704/" class="article-date">
+  <time class="dt-published" datetime="2024-12-28T02:37:04.662Z" itemprop="datePublished">2024-12-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/study/">study</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/12/28/chat_20241228_103704/">日志 2024-12-28</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+# 文档保存与 Git 同步使用指南
+
+## 1. 系统概述
+本系统用于快速保存和管理各类文档，分为四个类别：
+- 工作文档 (work)
+- 学习笔记 (study)
+- 生活记录 (life)
+- 兴趣爱好 (hobby)
+
+## 2. 目录结构
+```
+/Users/roger/Docume...
+        
+          <p class="article-more-link">
+            <a href="/2024/12/28/chat_20241228_103704/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/12/28/chat_20241228_103704/" data-id="cm57qonjk0009vntj2upn9t19" data-title="日志 2024-12-28" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-chat_20241228_102332" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/12/28/chat_20241228_102332/" class="article-date">
+  <time class="dt-published" datetime="2024-12-28T02:23:32.360Z" itemprop="datePublished">2024-12-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/study/">study</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/12/28/chat_20241228_102332/">日志 2024-12-28</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+现在我们已经成功把单一的 `savechat` 命令升级为四个分类命令：
+
+```bash
+# 原来的单一命令
+savechat="cd /Users/roger/Documents/website/topsir && ./save.sh"
+
+# 现在的分类命令
+savework="cd /Use...
+        
+          <p class="article-more-link">
+            <a href="/2024/12/28/chat_20241228_102332/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/12/28/chat_20241228_102332/" data-id="cm57qonjj0007vntjejd7b2fp" data-title="日志 2024-12-28" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-chat_20241228_101731" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/12/28/chat_20241228_101731/" class="article-date">
+  <time class="dt-published" datetime="2024-12-28T02:17:31.091Z" itemprop="datePublished">2024-12-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/study/">study</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/12/28/chat_20241228_101731/">日志 2024-12-28</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+现在让我们测试一下别名命令是否生效：
+
+1. 先检查别名是否正确设置：
+```bash
+alias | grep save
+```
+
+你应该能看到四个别名命令：
+- savework
+- savestudy
+- savelife
+- savehobby
+
+2. 测试保存功能：
+- 复制一段文本（C...
+        
+          <p class="article-more-link">
+            <a href="/2024/12/28/chat_20241228_101731/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/12/28/chat_20241228_101731/" data-id="cm57qonjh0005vntjh45m5orz" data-title="日志 2024-12-28" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-chat_20241228_094904" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/12/28/chat_20241228_094904/" class="article-date">
+  <time class="dt-published" datetime="2024-12-28T01:49:04.181Z" itemprop="datePublished">2024-12-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/study/">study</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/12/28/chat_20241228_094904/">日志 2024-12-28</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+我们需要使用你实际的项目目录。让我们先找到正确的目录：
+
+1. 确认你当前的项目目录：
+```bash
+pwd
+```
+
+2. 然后使用正确的路径创建别名。假设你现在在项目目录下，我们可以这样：
+```bash
+# 获取当前目录并创建别名
+echo "alias savechat=\"cd $(p...
+        
+          <p class="article-more-link">
+            <a href="/2024/12/28/chat_20241228_094904/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/12/28/chat_20241228_094904/" data-id="cm57qonjf0003vntj20it62p0" data-title="日志 2024-12-28" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-chat_20241228_093436" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/12/28/chat_20241228_093436/" class="article-date">
+  <time class="dt-published" datetime="2024-12-28T01:34:36.117Z" itemprop="datePublished">2024-12-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/study/">study</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/12/28/chat_20241228_093436/">日志 2024-12-28</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+也就是说，我只要复制了内容，再到com窗口 ./save.sh 就可以将复制的内容保存并推送到git了？
+
+是的，完全正确！工作流程就是这样：
+在 Cursor 中复制想要保存的对话内容（Cmd+C）
+打开终端，运行 ./save.sh
+脚本会自动：
+从剪贴板获取内容
+保存到 docs/chats...
+        
+          <p class="article-more-link">
+            <a href="/2024/12/28/chat_20241228_093436/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/12/28/chat_20241228_093436/" data-id="cm57qonji0006vntjhyole8v0" data-title="日志 2024-12-28" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-chat_20241228_092845" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/12/28/chat_20241228_092845/" class="article-date">
+  <time class="dt-published" datetime="2024-12-28T01:28:45.408Z" itemprop="datePublished">2024-12-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/study/">study</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2024/12/28/chat_20241228_092845/">日志 2024-12-28</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+创建并测试保存脚本：
+
+创建 save_chat.py 文件：
+import os
+import json
+from datetime import datetime
+import subprocess
+import pyperclip
+
+class ChatArchiver:
+    def _...
+        
+          <p class="article-more-link">
+            <a href="/2024/12/28/chat_20241228_092845/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/12/28/chat_20241228_092845/" data-id="cm57qonjc0001vntj4lxaf1i3" data-title="日志 2024-12-28" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/study/">study</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">December 2024</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/12/28/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2024/12/28/chat_20241228_123207/">日志 2024-12-28</a>
+          </li>
+        
+          <li>
+            <a href="/2024/12/28/chat_20241228_121637/">日志 2024-12-28</a>
+          </li>
+        
+          <li>
+            <a href="/2024/12/28/chat_20241228_121611/">日志 2024-12-28</a>
+          </li>
+        
+          <li>
+            <a href="/2024/12/28/chat_20241228_120902/">日志 2024-12-28</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
